@@ -1,0 +1,7 @@
+.sizing {
+  height: 18em;
+  background-color: white;
+  margin: 1em;
+  border-radius: 2%;
+  border: 1px solid rgba(0,0,0,.1);
+}
