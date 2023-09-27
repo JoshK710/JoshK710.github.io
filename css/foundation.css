@@ -5582,7 +5582,7 @@ select:not([multiple]) {
 .off-canvas-content.is-open-top.has-transition-push {
   -webkit-transform: translateY(250px);
       -ms-transform: translateY(250px);
-          transform: translateY(250px);
+          transform: translateY(50px);
 }
 
 .position-top.is-transition-push {

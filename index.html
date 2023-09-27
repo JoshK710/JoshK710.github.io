@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Canvas</title>
+	<title>Josh's Website</title>
 
 	<!-- normalize.css and modernizr.js help with browser compatibility -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -16,18 +16,37 @@
 	<script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
-  <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-    <!-- Your menu or Off-canvas content goes here -->
-    <a href="./index.html">Home</a>
-    <a href="./resume.html">Resume</a>
-    <a href="./projects.html">Projects</a>
-    <a href="./fun.html">Fun</a>
-  </div>
+  <div class="off-canvas-wrapper">
+    <div class="nav-bar off-canvas position-top" id="offCanvas" data-off-canvas data-transition="overlap">
+      <!-- Your menu or Off-canvas content goes here -->
+      <div class="nav-links">
+        <a class="link" href="./index.html">Home</a>
+        <a class="link" href="./resume.html">Resume</a>
+        <a class="link" href="./projects.html">Projects</a>
+        <a class="link" href="./fun.html">Fun</a>
+      </div>
+    </div>
 
-  <div class="off-canvas-content" data-off-canvas-content>
-    <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
-    <h1>Home Page</h1>
-  </div>
+    <div class="content off-canvas-content" data-off-canvas-content>
+      <button type="button" class="navigation button" data-toggle="offCanvas">
+        <img src="./img/menu.png" alt="Open Menu">
+      </button>
+
+      <div class="display grid-container">
+
+        <div class="grid-x">
+          <div class="cell large-4"></div>
+          <div class="cell large-4" style="background-color: blue; display: flex; align-items: center;">
+            <img class="headshot" src="./img/headshot.jpg" alt="A picture of me!">
+          </div>
+        </div>
+        <div class="grid-x">
+          
+        </div>
+      </div>
+    </div>
+</div>
+
 
 <!-- include before </body> tag -->
 <script src="js/vendor/jquery.js"></script>

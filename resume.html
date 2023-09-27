@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Canvas</title>
+	<title>Resume</title>
 
 	<!-- normalize.css and modernizr.js help with browser compatibility -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -16,17 +16,26 @@
 	<script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
-  <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-    <!-- Your menu or Off-canvas content goes here -->
-    <a href="./index.html">Home</a>
-    <a href="./resume.html">Resume</a>
-    <a href="./projects.html">Projects</a>
-    <a href="./fun.html">Fun</a>
+  <div class="off-canvas-wrapper">
+    <div class="nav-bar off-canvas position-top" id="offCanvas" data-off-canvas data-transition="overlap">
+      <!-- Your menu or Off-canvas content goes here -->
+      <div class="nav-links">
+        <a class="link" class="link" href="./index.html">Home</a>
+        <a class="link" href="./resume.html">Resume</a>
+        <a class="link" href="./projects.html">Projects</a>
+        <a class="link" href="./fun.html">Fun</a>
+      </div>
+    </div>
   </div>
 
-  <div class="off-canvas-content" data-off-canvas-content>
-    <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
-    <h1>Resume Page</h1>
+  <div class="content off-canvas-content" data-off-canvas-content>
+    <div class="black-separator"></div>
+    <button type="button" class="navigation button" data-toggle="offCanvas">
+      <img src="./img/menu.png" alt="Open Menu">
+    </button>
+    <div class="display">
+      <h1>Resume Page</h1>
+    </div>
   </div>
 
 <!-- include before </body> tag -->
