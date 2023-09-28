@@ -19,11 +19,13 @@
   <div class="off-canvas-wrapper">
     <div class="nav-bar off-canvas position-top" id="offCanvas" data-off-canvas data-transition="overlap">
       <!-- Your menu or Off-canvas content goes here -->
-      <div class="nav-links">
-        <a class="link" href="./index.html">Home</a>
-        <a class="link" href="./resume.html">Resume</a>
-        <a class="link" href="./projects.html">Projects</a>
-        <a class="link" href="./fun.html">Fun</a>
+      <div class="grid-container">
+        <div class="nav-links grid-x grid-margin-x">
+            <a class="link cell large-3 medium-3 small-6" href="./index.html">Home</a>
+            <a class="link cell large-3 medium-3 small-6" href="./resume.html">Resume</a>
+            <a class="link cell large-3 medium-3 small-6" href="./projects.html">Projects</a>
+            <a class="link cell large-3 medium-3 small-6" href="./fun.html">Fun</a>
+        </div>
       </div>
     </div>
 
@@ -31,19 +33,42 @@
       <button type="button" class="navigation button" data-toggle="offCanvas">
         <img src="./img/menu.png" alt="Open Menu">
       </button>
-
       <div class="display grid-container">
         <div class="grid-x grid-padding-x">
-          <h1>Internship Project</h1>
-
+          <div class="cell center large-4">
+            <img class="app" src="./img/group-button.jpg" alt="Internship project">
+          </div>
+          <div class="cell center large-8">
+            <h1>Internship Project</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam animi excepturi quo eum consequuntur numquam magni, quod natus corporis ea dolorum quia ad? Eos maxime laborum recusandae doloremque accusamus!
+            </p>
+          </div>
         </div>
+        <hr class="rounded">
         <div class="grid-x grid-padding-x">
-          <h1>My AI Project</h1>
-
+          <div class="cell center large-8">
+            <h1>My AI Project</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam animi excepturi quo eum consequuntur numquam magni, quod natus corporis ea dolorum quia ad? Eos maxime laborum recusandae doloremque accusamus!
+            </p>
+          </div>
+          <div class="cell center large-4">
+            <img class="robot" src="./img/robot.jpg" alt="My robot!">
+            <img class="robot-test" src="./img/robot-test.jpg" alt="Robot test!">
+          </div>
         </div>
+        <hr class="rounded">
         <div class="grid-x grid-padding-x">
-          <h1>Personal Project</h1>
-
+          <div class="cell center large-4">
+            <img class="app" src="./img/tic-tac-toe.jpg" alt="Tic Tac Toe Game!">
+          </div>
+          <div class="cell center large-8">
+            <h1>Personal Project</h1>
+            <p style="margin: 1em">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam animi excepturi quo eum consequuntur numquam magni, quod natus corporis ea dolorum quia ad? Eos maxime laborum recusandae doloremque accusamus!
+            </p>
+          </div>
         </div>
       </div>
     </div>

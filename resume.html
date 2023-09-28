@@ -19,11 +19,13 @@
   <div class="off-canvas-wrapper">
     <div class="nav-bar off-canvas position-top" id="offCanvas" data-off-canvas data-transition="overlap">
       <!-- Your menu or Off-canvas content goes here -->
-      <div class="nav-links">
-        <a class="link" class="link" href="./index.html">Home</a>
-        <a class="link" href="./resume.html">Resume</a>
-        <a class="link" href="./projects.html">Projects</a>
-        <a class="link" href="./fun.html">Fun</a>
+      <div class="grid-container">
+        <div class="nav-links grid-x grid-margin-x">
+            <a class="link cell large-3 medium-3 small-6" href="./index.html">Home</a>
+            <a class="link cell large-3 medium-3 small-6" href="./resume.html">Resume</a>
+            <a class="link cell large-3 medium-3 small-6" href="./projects.html">Projects</a>
+            <a class="link cell large-3 medium-3 small-6" href="./fun.html">Fun</a>
+        </div>
       </div>
     </div>
   </div>
@@ -33,63 +35,72 @@
       <img src="./img/menu.png" alt="Open Menu">
     </button>
     <div class="display grid-container">
-      <div class="grid-x grid-padding-x">
+      <div class="grid-x dark-blue round">
         <div class="cell large-12">
-          <h1 style="text-align: center; font-weight: bold">Resume</h1>
+          <h1 class="resume-header">Resume</h1>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
         <div class="cell large-12">
-          <h4 style="text-align: center">Joshua Kahlbaugh</h4>
-          <p style="text-align: center">Address: 4321 Grouse Ridge Dr, Duluth, MN 55811</p>
-          <p style="text-align: center">Email: kahl7683@stthomas.edu</p>
-          <p style="text-align: center">Phone: (218) 491-4226</p>
+          <h4 class="center-text">Joshua Kahlbaugh</h4>
+          <p class="center-text">Address: 4321 Grouse Ridge Dr, Duluth, MN 55811</p>
+          <p class="center-text">Email: kahl7683@stthomas.edu</p>
+          <p class="center-text">Phone: (218) 491-4226</p>
         </div>
       </div>
 
-      <div class="grid-x grid-padding-x">
+      <div class="grid-x grid-padding-x light-blue round">
         <div class="cell large-12">
-          <h5 style="text-align: center; font-weight: bold">Education</h5>
+          <h5 class="subheader">Education</h5>
         </div>
       </div>
 
       <div class="grid-x grid-padding-x">
         <div class="cell large-6">
-          <p style="text-align: center">University of St Thomas</p>
+          <p class="center-text">University of St Thomas</p>
         </div>
         <div class="cell large-6">
-          <p style="text-align: center">Graduation: May 2024</p>
+          <p class="center-text">Graduation: May 2024</p>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x light-blue round">
+        <div class="cell center large-12">
+          <h5 class="subheader">Work Experience</h5>
         </div>
       </div>
 
       <div class="grid-x grid-padding-x">
-        <div class="cell large-12">
-          <h5 style="text-align: center; font-weight: bold">Work Experience</h5>
-        </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="cell large-2">
-          <p style="text-align: center">Secret Lab, LLC</p>
+        <div class="cell large-4 center-text">
+          <p>Secret Lab, LLC</p>
         </div>
         <div class="cell large-8">
-          <p style="text-align: center">Talk a little bit about my experience at secret lab.</p>
+          <ul>
+            <li>Secret Lab is a Private Equity firm which focuses on making apps with some of the latest app development software.</li>
+            <li>I've worked there for a couple of years and I've learned a lot about designing interfaces using drawing software known as figma.</li>
+            <li>Experience with front end and backend development</li>
+            <li>Lately, we've been using AI to develop apps and the use of ChatGPT has proved to be helpful not only for learning, but in the
+              value it provides to an app that implements it.</li>
+            <li>This job has also helped me to think about the experience of users for an app which is impactful because that is an important part of app development.</li>
+          </ul>
         </div>
       </div>
-
+      <hr>
       <div class="grid-x grid-padding-x">
-        <div class="cell large-2">
-          <p style="text-align: center">Programming languages</p>
+        <div class="cell large-4 center-text">
+          <p>Programming languages</p>
         </div>
         <div class="cell large-8">
           <ul>
             <li>Java</li>
             <li>Python</li>
             <li>Lisp</li>
+            <li>Html and Css</li>
+            <li>Javascript</li>
+            <li>Typescript</li>
           </ul>
         </div>
       </div>
-      
     </div>
   </div>
 

@@ -19,12 +19,14 @@
   <div class="off-canvas-wrapper">
     <div class="nav-bar off-canvas position-top" id="offCanvas" data-off-canvas data-transition="overlap">
       <!-- Your menu or Off-canvas content goes here -->
-      <div class="nav-links">
-        <a class="link" href="./index.html">Home</a>
-        <a class="link" href="./resume.html">Resume</a>
-        <a class="link" href="./projects.html">Projects</a>
-        <a class="link" href="./fun.html">Fun</a>
-      </div>
+        <div class="grid-container">
+          <div class="nav-links grid-x grid-margin-x">
+              <a class="link cell large-3 medium-3 small-6" href="./index.html">Home</a>
+              <a class="link cell large-3 medium-3 small-6" href="./resume.html">Resume</a>
+              <a class="link cell large-3 medium-3 small-6" href="./projects.html">Projects</a>
+              <a class="link cell large-3 medium-3 small-6" href="./fun.html">Fun</a>
+          </div>
+        </div>
     </div>
 
     <div class="content off-canvas-content" data-off-canvas-content>
@@ -34,7 +36,7 @@
 
       <div class="display grid-container">
         <div class="grid-x grid-padding-x">
-          <div class="cell large-8 small-12">
+          <div class="cell large-8 medium-6 small-12">
             <h1 style="font-weight: bold">About Me:</h1>
             <p style="font-size: 20px">My name is Joshua Kahlbaugh and this is my website! I'm currently a senior in college at the University of St Thomas 
               pursuing a bachelor's degree in computer science. I'm originally from Duluth Minnesota, and it took
@@ -46,8 +48,8 @@
               really open my eyes to what's out there in the world!
             </p>
           </div>
-          <div class="cell large-4 small-4">
-            <img class="headshot" src="./img/headshot.jpg" alt="A picture of me!">
+          <div class="cell large-4 medium-6 small-12">
+            <img class="headshot center" src="./img/headshot.jpg" alt="A picture of me!">
           </div>
         </div>
       </div>

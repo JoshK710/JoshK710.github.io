@@ -3,7 +3,9 @@
   --light-blue: #9fcbee;
   --blue: #14679e;
   --red: #d8031c;
+  --light-gray: #bbb;
   --gray: #5a5a5a;
+  --white: #FFF;
   /* --old-red: #c9041d; */
    /* --even-older-red: #9e0216; */
    /* --old-blue: #6497bf; */
@@ -11,11 +13,22 @@
 
 html {
   background-color: var(--gray);
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  /* text-align: center; */
+  margin: 1em;
 }
 
 .sizing {
   height: 18em;
-  background-color: white;
+  background-color: var(--white);
   margin: 1em;
   border-radius: 2%;
   border: 1px solid rgba(0,0,0,.1);
@@ -23,47 +36,65 @@ html {
 
 .nav-bar {
   height: 5em;
-  display: flex;
-  align-items: space-between;
+  width: 100%;
+  max-width: 100%;
 }
 
 .navigation {
   width: 100%;
   height: 5em;
   background-color: var(--red);
-  position: sticky;
 }
 
-button:hover, .button:focus {
+/* button:hover, .button:focus {
   background-color: var(--gray);
-}
+} */
 
 .nav-links {
   margin: auto;
-  color: var(--blue);
+  height: 2em
 }
 
 .link {
-  margin-left: 5em;
-  margin-right: 5em;
   border-radius: 1em;
-  border: var(--red) solid 3px;
-  padding: 1em;
+  border: var(--dark-blue) solid 3px;
+  color: var(--blue);
   font-size: 20;
   font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  margin: 2%;
+}
+
+.resume-header {
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+}
+
+.subheader {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+a:hover {
+  color: var(--light-blue);
 }
 
 .content {
   background-color: var(--gray);
-  width: 100%;
-  height: 50em;
+  /* width: 100%; */
+  /* height: 50em; */
 }
 
 .display {
+  max-width: 95%;
   width: 95%;
-  height: auto;
+  /* height: auto; */
+  margin: auto;
   padding: 2em;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 1em;
 }
 
@@ -73,4 +104,71 @@ button:hover, .button:focus {
   border-radius: 25px;
   height: 35em;
   width: auto;
+}
+
+.robot {
+  padding: auto;
+  margin: auto;
+  border-radius: 25px;
+  height: auto;
+  width: 80%;
+}
+
+.robot-test {
+  /* padding: auto; */
+  /* margin: auto; */
+  border-radius: 25px;
+  /* height: auto ; */
+  width: 80%;
+}
+
+.app {
+  border-radius: 25px;
+  width: 80%;
+  padding: auto;
+  margin: auto;
+  height: auto;
+}
+
+.right-side {
+  text-align: end;
+}
+
+hr.rounded {
+  border-top: 8px solid var(--light-gray);
+  border-radius: 5px;
+  margin: 2em;
+}
+
+.center {
+  display: flex; 
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;;
+}
+
+.end {
+  display: flex; 
+  flex-direction: column;
+  align-items: end;
+}
+
+.dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.light-blue {
+  background-color: var(--light-blue);
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+}
+
+.round {
+  border-radius: 2em;
 }
