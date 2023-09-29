@@ -6,9 +6,6 @@
   --light-gray: #bbb;
   --gray: #5a5a5a;
   --white: #FFF;
-  /* --old-red: #c9041d; */
-   /* --even-older-red: #9e0216; */
-   /* --old-blue: #6497bf; */
 }
 
 html {
@@ -22,16 +19,7 @@ h1 {
 }
 
 p {
-  /* text-align: center; */
   margin: 1em;
-}
-
-.sizing {
-  height: 18em;
-  background-color: var(--white);
-  margin: 1em;
-  border-radius: 2%;
-  border: 1px solid rgba(0,0,0,.1);
 }
 
 .nav-bar {
@@ -46,18 +34,14 @@ p {
   background-color: var(--red);
 }
 
-/* button:hover, .button:focus {
-  background-color: var(--gray);
-} */
-
 .nav-links {
   margin: auto;
-  height: 2em
+  height: 2em;
 }
 
 .link {
   border-radius: 1em;
-  border: var(--dark-blue) solid 3px;
+  border: var(--dark-blue) solid 0.2em;
   color: var(--blue);
   font-size: 20;
   font-weight: bold;
@@ -75,7 +59,14 @@ p {
 .subheader {
   font-weight: bold;
   text-align: center;
-  color: black;
+  color: #000;
+}
+
+.card-header {
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -84,8 +75,6 @@ a:hover {
 
 .content {
   background-color: var(--gray);
-  /* width: 100%; */
-  /* height: 50em; */
 }
 
 .display {
@@ -101,60 +90,34 @@ a:hover {
 .headshot {
   padding: auto;
   margin: auto;
-  border-radius: 25px;
+  border-radius: 1em;
   height: 35em;
   width: auto;
 }
 
-.robot {
-  padding: auto;
-  margin: auto;
-  border-radius: 25px;
-  height: auto;
-  width: 80%;
-}
-
-.robot-test {
-  /* padding: auto; */
-  /* margin: auto; */
-  border-radius: 25px;
-  /* height: auto ; */
-  width: 80%;
-}
-
-.app {
-  border-radius: 25px;
+.picture {
+  border-radius: 1em;
   width: 80%;
   padding: auto;
   margin: auto;
   height: auto;
-}
-
-.right-side {
-  text-align: end;
 }
 
 hr.rounded {
-  border-top: 8px solid var(--light-gray);
-  border-radius: 5px;
+  border-top: 0.5em solid var(--light-gray);
+  border-radius: 0.3em;
   margin: 2em auto
 }
 
 .center {
   display: flex; 
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 .center-text {
   text-align: center;;
-}
-
-.end {
-  display: flex; 
-  flex-direction: column;
-  align-items: end;
 }
 
 .dark-blue {
@@ -165,10 +128,14 @@ hr.rounded {
   background-color: var(--light-blue);
 }
 
-.light-gray {
-  background-color: var(--light-gray);
-}
-
 .round {
   border-radius: 2em;
+}
+
+.paragraph-1 {
+  font-size: 2em;
+}
+
+.paragraph-2 {
+  font-size: 1.3em;
 }
